@@ -5,7 +5,7 @@ cabal-version: 1.12
 -- see: https://github.com/sol/hpack
 
 name:                delude
-version:             0.1.0.0
+version:             0.1.0.1
 synopsis:            Simple Prelude replacement for toy programs
 description:         See https://github.com/chuahou/delude#readme.
 homepage:            https://github.com/chuahou/delude#readme
