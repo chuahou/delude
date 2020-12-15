@@ -1,0 +1,20 @@
+name:               delude
+version:            0.1.0.0
+synopsis:           Simple Prelude replacement for toy programs
+description:        See https://github.com/chuahou/delude#readme.
+category:           Development
+github:             chuahou/delude
+author:             Chua Hou
+maintainer:         human+github@chuahou.dev
+extra-source-files: CHANGELOG.md
+
+ghc-options:
+    - -Wall
+    - -fwarn-incomplete-uni-patterns
+    - -fwarn-incomplete-record-updates
+
+dependencies:
+    - base ^>= 4.13
+
+library:
+    source-dirs: src
