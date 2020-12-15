@@ -38,12 +38,16 @@ module Delude (
               -- * Non-@Prelude@ reexports
               -- ** 'Data.Foldable'
               , module Data.Foldable
+              -- ** 'Text.Read'
+              , module Text.Read
               -- * Original @Prelude@ reexports
               , module Prelude
               ) where
 
 import           Data.Foldable      (foldl')
 import           Data.List.NonEmpty (NonEmpty (..))
+import           Text.Read          (readMaybe)
+
 import           Prelude            hiding (foldl1, foldr1, head, init, last,
                                      maximum, minimum, product, sum, tail)
 import qualified Prelude
