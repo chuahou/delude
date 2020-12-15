@@ -106,7 +106,7 @@ sum = foldl' (+) 0
 -- | 'Prelude.product' but with strict 'foldl'' for better performance. Computes
 -- the product of numbers in a structure.
 product :: (Foldable t, Num a) => t a -> a
-product = foldl' (*) 0
+product = foldl' (*) 1
 
 -- | Extract the first element of a list, returning 'Nothing' when the list is
 -- empty.
