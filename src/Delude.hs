@@ -18,6 +18,7 @@
 
 module Delude (
               -- * Rewritten functions
+              -- ** Folds and traversals
                 foldr1
               , foldl1
               , foldr1'
@@ -87,10 +88,12 @@ maximum' = Prelude.maximum
 minimum' :: (Ord a) => NonEmpty a -> a
 minimum' = Prelude.minimum
 
--- | 'Prelude.sum' but with strict 'foldl'' for better performance.
+-- | 'Prelude.sum' but with strict 'foldl'' for better performance. Computes the
+-- sum of numbers in a structure.
 sum :: (Foldable t, Num a) => t a -> a
 sum = foldl' (+) 0
 
--- | 'Prelude.product' but with strict 'foldl'' for better performance.
+-- | 'Prelude.product' but with strict 'foldl'' for better performance. Computes
+-- the product of numbers in a structure.
 product :: (Foldable t, Num a) => t a -> a
 product = foldl' (*) 0
