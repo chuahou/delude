@@ -29,6 +29,12 @@ module Delude (
               , minimum'
               , sum
               , product
+              -- ** List operations
+              , head
+              , last
+              , tail
+              , init
+              , (!?)
               -- * Non-@Prelude@ reexports
               -- ** 'Data.Foldable'
               , module Data.Foldable
@@ -38,8 +44,8 @@ module Delude (
 
 import           Data.Foldable      (foldl')
 import           Data.List.NonEmpty (NonEmpty (..))
-import           Prelude            hiding (foldl1, foldr1, maximum, minimum,
-                                     product, sum)
+import           Prelude            hiding (foldl1, foldr1, head, init, last,
+                                     maximum, minimum, product, sum, tail)
 import qualified Prelude
 
 -- | A variant of 'foldr' that has no base case, that when applied to an empty
@@ -97,3 +103,34 @@ sum = foldl' (+) 0
 -- the product of numbers in a structure.
 product :: (Foldable t, Num a) => t a -> a
 product = foldl' (*) 0
+
+-- | Extract the first element of a list, returning 'Nothing' when the list is
+-- empty.
+head :: [a] -> Maybe a
+head (x:_) = Just x
+head []    = Nothing
+
+-- | Extract the last element of a list, which must be finite, returning
+-- 'Nothing' when the list is empty.
+last :: [a] -> Maybe a
+last = foldl' (\_ x -> Just x) Nothing
+
+-- | Extract the elements after the head of a list, returning 'Nothing' when the
+-- list is empty.
+tail :: [a] -> Maybe [a]
+tail (_:xs) = Just xs
+tail []     = Nothing
+
+-- | Return all the elements of a list except the last one, returning 'Nothing'
+-- when the list is empty.
+init :: [a] -> Maybe [a]
+init []     = Nothing
+init [_]    = Just []
+init (x:xs) = (x:) <$> init xs
+
+-- | List safe index (subscript) operator, starting from 0, returning 'Nothing'
+-- when out of bounds.
+(!?) :: [a] -> Int -> Maybe a
+(x:_)  !? 0 = Just x
+(_:xs) !? n = if n < 0 then Nothing else xs !? (n - 1)
+[]     !? _ = Nothing
