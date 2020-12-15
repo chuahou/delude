@@ -13,6 +13,9 @@ ghc-options:
     - -fwarn-incomplete-uni-patterns
     - -fwarn-incomplete-record-updates
 
+default-extensions:
+    - NoImplicitPrelude
+
 dependencies:
     - base ^>= 4.13
 

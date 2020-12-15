@@ -7,8 +7,7 @@ cabal-version: 1.12
 name:                delude
 version:             0.1.0.0
 synopsis:            Simple Prelude replacement for toy programs
-description:         A simple Prelude replacement, aiming to bring unsafe partial functions out of scope, and bring in replacements work as suitable replacements, such as readMaybe instead of read, and head/tail that return Maybe values.
-                     See https://github.com/chuahou/delude#readme.
+description:         See https://github.com/chuahou/delude#readme.
 homepage:            https://github.com/chuahou/delude#readme
 bug-reports:         https://github.com/chuahou/delude/issues
 license:             MIT
@@ -26,12 +25,13 @@ source-repository head
 
 library
   exposed-modules:
-      MyLib
+      Delude
   other-modules:
       Paths_delude
   build-depends:
       base >=4.13 && <4.14
   hs-source-dirs:
       src
+  default-extensions: NoImplicitPrelude
   ghc-options: -Wall -fwarn-incomplete-uni-patterns -fwarn-incomplete-record-updates
   default-language: Haskell2010
