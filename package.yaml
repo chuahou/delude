@@ -1,5 +1,5 @@
 name:               delude
-version:            0.1.0.0
+version:            0.1.0.1
 synopsis:           Simple Prelude replacement for toy programs
 description:        See https://github.com/chuahou/delude#readme.
 category:           Development
@@ -17,7 +17,7 @@ default-extensions:
     - NoImplicitPrelude
 
 dependencies:
-    - base ^>= 4.13
+    - base >= 4.13 && < 5
 
 library:
     source-dirs: src
