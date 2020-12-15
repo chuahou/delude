@@ -11,6 +11,9 @@ functions out of scope, and bring in replacements work as suitable
 replacements, such as ``readMaybe`` instead of ``read``, and
 ``head``/``tail`` that return ``Maybe`` values.
 
+Haddock documentation can be found
+`on GitHub pages <https://chuahou.dev/delude/Delude.html>`_.
+
 Why another ``Prelude`` replacement?
 ====================================
 
