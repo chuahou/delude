@@ -5,4 +5,5 @@ in
     buildTools = (old.buildTools or []) ++ [
       pkgs.haskellPackages.haskell-language-server
     ];
+    doBenchmark = true;
   })).env

@@ -4,3 +4,5 @@ cradle:
           component: "lib:delude"
         - path:      "./test"
           component: "test:test"
+        - path:      "./bench"
+          component: "bench:compare"

@@ -32,3 +32,11 @@ tests:
             - QuickCheck ^>= 2.13.2
         default-extensions:
             - ScopedTypeVariables
+
+benchmarks:
+    compare:
+        main:        Compare.hs
+        source-dirs: bench
+        dependencies:
+            - delude
+            - criterion
