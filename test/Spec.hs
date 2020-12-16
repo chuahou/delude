@@ -25,6 +25,8 @@ mkprop_NE :: (NonEmpty Int -> Int)
           -> (NonEmpty Int -> Int)
           -> NonEmptyList Int -> Bool
 mkprop_NE f g (NonEmpty (x:xs)) = f (x:|xs) == g (x:|xs)
+mkprop_NE _ _ (NonEmpty [])     = False
+    -- this case should not happen thanks to 'NonEmpty'
 
 -- Tests currently only run on 'Int's with until I get around to learning
 -- @QuickCheck@ properly.
