@@ -28,7 +28,7 @@ tests:
         source-dirs: test
         dependencies:
             - delude
-            - hspec
-            - QuickCheck
+            - hspec      ^>= 2.7.2
+            - QuickCheck ^>= 2.13.2
         default-extensions:
             - ScopedTypeVariables
