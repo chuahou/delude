@@ -1,9 +1,10 @@
 { pkgs ? import ./nix/nixpkgs.nix {} }:
 
-let pkg = pkgs.haskellPackages.callCabal2nix "delude" ./. {};
-in pkgs.haskell.lib.overrideCabal pkg (old: {
-  buildTools = (old.buildTools or []) ++ [
-    pkgs.haskellPackages.cabal-install
-    pkgs.haskellPackages.haskell-language-server
-  ];
-})
+let
+  delude = pkgs.haskellPackages.callCabal2nix "delude" ./. {};
+in
+  pkgs.haskell.lib.overrideCabal delude (old: {
+    buildTools = (old.buildTools or []) ++ [
+      pkgs.haskellPackages.cabal-install
+    ];
+  })
