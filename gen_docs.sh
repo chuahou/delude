@@ -7,3 +7,4 @@
 cabal haddock --haddock-hyperlink-source
 rm docs/ -rf
 cp dist-newstyle/build/x86_64-linux/ghc-*/delude-*/doc/html/delude -r docs
+cp bench.html docs/

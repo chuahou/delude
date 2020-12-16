@@ -1,0 +1,210 @@
+benchmarking Comparison of foldr1/Delude
+time                 96.99 ms   (90.74 ms .. 103.5 ms)
+                     0.989 R²   (0.959 R² .. 0.998 R²)
+mean                 96.32 ms   (92.04 ms .. 101.1 ms)
+std dev              7.413 ms   (5.005 ms .. 12.21 ms)
+variance introduced by outliers: 21% (moderately inflated)
+
+benchmarking Comparison of foldr1/Prelude
+time                 5.341 ns   (5.284 ns .. 5.410 ns)
+                     0.999 R²   (0.998 R² .. 0.999 R²)
+mean                 5.377 ns   (5.317 ns .. 5.454 ns)
+std dev              228.9 ps   (163.9 ps .. 309.2 ps)
+variance introduced by outliers: 68% (severely inflated)
+
+benchmarking Comparison of foldl1/Delude
+time                 222.3 ms   (194.2 ms .. 236.3 ms)
+                     0.993 R²   (0.975 R² .. 1.000 R²)
+mean                 229.1 ms   (217.2 ms .. 246.1 ms)
+std dev              19.94 ms   (12.11 ms .. 33.62 ms)
+variance introduced by outliers: 16% (moderately inflated)
+
+benchmarking Comparison of foldl1/Prelude
+time                 5.352 ns   (5.290 ns .. 5.413 ns)
+                     0.998 R²   (0.998 R² .. 0.999 R²)
+mean                 5.250 ns   (5.152 ns .. 5.335 ns)
+std dev              310.8 ps   (231.7 ps .. 389.8 ps)
+variance introduced by outliers: 81% (severely inflated)
+
+benchmarking Comparison of foldr1'/Delude
+time                 30.83 ms   (28.36 ms .. 32.75 ms)
+                     0.983 R²   (0.966 R² .. 0.995 R²)
+mean                 32.11 ms   (30.50 ms .. 36.05 ms)
+std dev              5.249 ms   (2.042 ms .. 9.733 ms)
+variance introduced by outliers: 63% (severely inflated)
+
+benchmarking Comparison of foldr1'/Prelude
+time                 31.08 ms   (28.87 ms .. 33.28 ms)
+                     0.980 R²   (0.956 R² .. 0.993 R²)
+mean                 30.96 ms   (29.21 ms .. 32.76 ms)
+std dev              3.747 ms   (2.657 ms .. 5.520 ms)
+variance introduced by outliers: 51% (severely inflated)
+
+benchmarking Comparison of foldl1'/Delude
+time                 8.102 ms   (7.979 ms .. 8.249 ms)
+                     0.997 R²   (0.993 R² .. 0.999 R²)
+mean                 8.060 ms   (7.981 ms .. 8.185 ms)
+std dev              292.0 μs   (187.9 μs .. 456.8 μs)
+variance introduced by outliers: 14% (moderately inflated)
+
+benchmarking Comparison of foldl1'/Prelude
+time                 8.357 ms   (8.123 ms .. 8.535 ms)
+                     0.996 R²   (0.993 R² .. 0.998 R²)
+mean                 8.362 ms   (8.273 ms .. 8.444 ms)
+std dev              239.6 μs   (192.1 μs .. 301.5 μs)
+variance introduced by outliers: 11% (moderately inflated)
+
+benchmarking Comparison of maximum/Delude
+time                 217.4 ms   (209.0 ms .. 222.0 ms)
+                     0.999 R²   (0.995 R² .. 1.000 R²)
+mean                 223.3 ms   (219.9 ms .. 232.3 ms)
+std dev              7.246 ms   (900.0 μs .. 10.15 ms)
+variance introduced by outliers: 14% (moderately inflated)
+
+benchmarking Comparison of maximum/Prelude
+time                 5.390 ns   (5.307 ns .. 5.484 ns)
+                     0.998 R²   (0.997 R² .. 0.999 R²)
+mean                 5.390 ns   (5.330 ns .. 5.477 ns)
+std dev              242.5 ps   (183.7 ps .. 320.6 ps)
+variance introduced by outliers: 70% (severely inflated)
+
+benchmarking Comparison of minimum/Delude
+time                 216.8 ms   (209.2 ms .. 221.0 ms)
+                     0.999 R²   (0.996 R² .. 1.000 R²)
+mean                 221.8 ms   (218.9 ms .. 231.9 ms)
+std dev              6.374 ms   (422.9 μs .. 8.858 ms)
+variance introduced by outliers: 14% (moderately inflated)
+
+benchmarking Comparison of minimum/Prelude
+time                 5.355 ns   (5.283 ns .. 5.426 ns)
+                     0.998 R²   (0.996 R² .. 0.999 R²)
+mean                 5.237 ns   (5.108 ns .. 5.334 ns)
+std dev              374.5 ps   (281.4 ps .. 472.7 ps)
+variance introduced by outliers: 86% (severely inflated)
+
+benchmarking Comparison of maximum'/Delude
+time                 63.97 ms   (61.13 ms .. 66.16 ms)
+                     0.995 R²   (0.984 R² .. 0.998 R²)
+mean                 62.28 ms   (59.67 ms .. 64.36 ms)
+std dev              4.347 ms   (3.120 ms .. 5.842 ms)
+variance introduced by outliers: 23% (moderately inflated)
+
+benchmarking Comparison of maximum'/Prelude
+time                 62.94 ms   (59.85 ms .. 65.24 ms)
+                     0.995 R²   (0.987 R² .. 0.999 R²)
+mean                 62.99 ms   (60.47 ms .. 65.01 ms)
+std dev              4.240 ms   (3.002 ms .. 6.686 ms)
+variance introduced by outliers: 23% (moderately inflated)
+
+benchmarking Comparison of minimum'/Delude
+time                 64.09 ms   (61.50 ms .. 66.45 ms)
+                     0.995 R²   (0.985 R² .. 0.998 R²)
+mean                 62.61 ms   (59.84 ms .. 64.86 ms)
+std dev              4.584 ms   (3.206 ms .. 6.217 ms)
+variance introduced by outliers: 23% (moderately inflated)
+
+benchmarking Comparison of minimum'/Prelude
+time                 64.73 ms   (62.04 ms .. 67.58 ms)
+                     0.994 R²   (0.987 R² .. 0.998 R²)
+mean                 60.67 ms   (55.67 ms .. 63.44 ms)
+std dev              6.648 ms   (2.632 ms .. 9.013 ms)
+variance introduced by outliers: 40% (moderately inflated)
+
+benchmarking Comparison of sum/Delude
+time                 9.087 ms   (8.958 ms .. 9.207 ms)
+                     0.998 R²   (0.996 R² .. 0.999 R²)
+mean                 9.027 ms   (8.936 ms .. 9.156 ms)
+std dev              277.0 μs   (206.4 μs .. 395.3 μs)
+variance introduced by outliers: 12% (moderately inflated)
+
+benchmarking Comparison of sum/Prelude
+time                 176.1 ms   (156.2 ms .. 197.9 ms)
+                     0.989 R²   (0.973 R² .. 1.000 R²)
+mean                 190.3 ms   (182.9 ms .. 203.5 ms)
+std dev              13.59 ms   (6.808 ms .. 20.27 ms)
+variance introduced by outliers: 15% (moderately inflated)
+
+benchmarking Comparison of product/Delude
+time                 9.092 ms   (8.910 ms .. 9.313 ms)
+                     0.996 R²   (0.994 R² .. 0.998 R²)
+mean                 9.114 ms   (8.987 ms .. 9.355 ms)
+std dev              470.7 μs   (306.6 μs .. 699.6 μs)
+variance introduced by outliers: 24% (moderately inflated)
+
+benchmarking Comparison of product/Prelude
+time                 186.9 ms   (151.3 ms .. 218.8 ms)
+                     0.983 R²   (0.958 R² .. 1.000 R²)
+mean                 178.5 ms   (169.5 ms .. 186.9 ms)
+std dev              11.89 ms   (7.761 ms .. 16.73 ms)
+variance introduced by outliers: 15% (moderately inflated)
+
+benchmarking Comparison of head/Delude
+time                 6.310 ns   (6.077 ns .. 6.518 ns)
+                     0.992 R²   (0.991 R² .. 0.995 R²)
+mean                 6.317 ns   (6.154 ns .. 6.495 ns)
+std dev              598.9 ps   (535.3 ps .. 703.1 ps)
+variance introduced by outliers: 92% (severely inflated)
+
+benchmarking Comparison of head/Prelude
+time                 5.367 ns   (5.292 ns .. 5.453 ns)
+                     0.998 R²   (0.997 R² .. 0.999 R²)
+mean                 5.319 ns   (5.218 ns .. 5.422 ns)
+std dev              318.8 ps   (227.1 ps .. 440.9 ps)
+variance introduced by outliers: 81% (severely inflated)
+
+benchmarking Comparison of last/Delude
+time                 7.718 ms   (7.428 ms .. 8.026 ms)
+                     0.991 R²   (0.985 R² .. 0.995 R²)
+mean                 7.537 ms   (7.378 ms .. 7.699 ms)
+std dev              481.4 μs   (398.2 μs .. 620.7 μs)
+variance introduced by outliers: 34% (moderately inflated)
+
+benchmarking Comparison of last/Prelude
+time                 5.419 ns   (5.321 ns .. 5.512 ns)
+                     0.998 R²   (0.997 R² .. 0.999 R²)
+mean                 5.348 ns   (5.291 ns .. 5.419 ns)
+std dev              209.0 ps   (154.1 ps .. 280.9 ps)
+variance introduced by outliers: 64% (severely inflated)
+
+benchmarking Comparison of tail/Delude
+time                 6.515 ns   (6.305 ns .. 6.729 ns)
+                     0.994 R²   (0.992 R² .. 0.996 R²)
+mean                 6.441 ns   (6.279 ns .. 6.680 ns)
+std dev              691.4 ps   (529.4 ps .. 1.065 ns)
+variance introduced by outliers: 93% (severely inflated)
+
+benchmarking Comparison of tail/Prelude
+time                 5.328 ns   (5.275 ns .. 5.378 ns)
+                     0.998 R²   (0.997 R² .. 0.999 R²)
+mean                 5.231 ns   (5.119 ns .. 5.330 ns)
+std dev              344.0 ps   (258.9 ps .. 455.2 ps)
+variance introduced by outliers: 84% (severely inflated)
+
+benchmarking Comparison of init/Delude
+time                 83.90 ms   (77.37 ms .. 89.04 ms)
+                     0.993 R²   (0.985 R² .. 0.999 R²)
+mean                 83.86 ms   (76.31 ms .. 90.19 ms)
+std dev              11.41 ms   (6.436 ms .. 19.40 ms)
+variance introduced by outliers: 48% (moderately inflated)
+
+benchmarking Comparison of init/Prelude
+time                 5.362 ns   (5.308 ns .. 5.425 ns)
+                     0.999 R²   (0.998 R² .. 0.999 R²)
+mean                 5.409 ns   (5.340 ns .. 5.501 ns)
+std dev              265.8 ps   (194.9 ps .. 379.5 ps)
+variance introduced by outliers: 74% (severely inflated)
+
+benchmarking Comparison of !?vs!!/Delude
+time                 4.225 ms   (4.180 ms .. 4.286 ms)
+                     0.998 R²   (0.997 R² .. 0.999 R²)
+mean                 4.173 ms   (4.121 ms .. 4.222 ms)
+std dev              163.3 μs   (112.4 μs .. 233.2 μs)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking Comparison of !?vs!!/Prelude
+time                 5.380 ns   (5.324 ns .. 5.447 ns)
+                     0.999 R²   (0.998 R² .. 0.999 R²)
+mean                 5.407 ns   (5.349 ns .. 5.503 ns)
+std dev              243.2 ps   (164.6 ps .. 346.3 ps)
+variance introduced by outliers: 70% (severely inflated)
+

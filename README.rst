@@ -31,5 +31,29 @@ Should I use this?
 
 **No.**
 
+Benchmarks
+==========
+
+Benchmark results using ``criterion`` can be found in text in
+`bench.txt <bench.txt>`_, and online on
+`chuahou.dev <https://chuahou.dev/delude/bench.html>`_.
+
+A short commentary:
+
+* *Terrible* performance deprovements in ``foldr1``, ``foldl1``,
+  ``maximum``, ``minimum``, presumably due to propagation of ``Maybe``.
+* Negligible performance change for ``foldr1'``, ``foldl1'``,
+  ``maximum'``, ``minimum'`` as they don't do anything extra.
+* *Great* performance improvements for ``sum`` and ``product`` using
+  strict ``foldl'`` in place of ``foldMap``.
+* Some small performance degradation for ``head`` and ``tail``,
+  as there is some ``Maybe`` overhead, probably.
+* Larger performance degradation for ``last``, as it needs to traverse
+  the list.
+* Sizable performance degradation for ``init`` due to a large number of
+  ``fmap``-ed conses.
+* Lastly, a sizable performance degradation for ``(!?)``, since it's
+  just naïve recursion.
+
 .. |License: MIT| image:: https://img.shields.io/badge/License-MIT-yellow.svg
 	:target: https://opensource.org/licenses/MIT
