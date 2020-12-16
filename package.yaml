@@ -1,5 +1,5 @@
 name:               delude
-version:            0.1.0.2
+version:            0.1.0.3
 synopsis:           Simple Prelude replacement for toy programs
 description:        See https://github.com/chuahou/delude#readme.
 category:           Development
@@ -21,3 +21,14 @@ dependencies:
 
 library:
     source-dirs: src
+
+tests:
+    test:
+        main:        Spec.hs
+        source-dirs: test
+        dependencies:
+            - delude
+            - hspec
+            - QuickCheck
+        default-extensions:
+            - ScopedTypeVariables
