@@ -1,5 +1,10 @@
 # Revision history for delude
 
+## 0.1.0.4 -- 2020-12-22
+
+* Use `filterSource` to prevent noise from entering derivation, for better
+  caching.
+
 ## 0.1.0.3 -- 2020-12-16
 
 * Added tests.
