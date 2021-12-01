@@ -1,6 +1,6 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.34.2.
+-- This file has been generated from package.yaml by hpack version 0.34.5.
 --
 -- see: https://github.com/sol/hpack
 
@@ -32,7 +32,8 @@ library
       base >=4.13 && <5
   hs-source-dirs:
       src
-  default-extensions: NoImplicitPrelude
+  default-extensions:
+      NoImplicitPrelude
   ghc-options: -Wall -fwarn-incomplete-uni-patterns -fwarn-incomplete-record-updates
   default-language: Haskell2010
 
@@ -43,10 +44,12 @@ test-suite test
       Paths_delude
   hs-source-dirs:
       test
-  default-extensions: NoImplicitPrelude ScopedTypeVariables
+  default-extensions:
+      NoImplicitPrelude
+      ScopedTypeVariables
   ghc-options: -Wall -fwarn-incomplete-uni-patterns -fwarn-incomplete-record-updates
   build-depends:
-      QuickCheck >=2.13.2 && <2.14
+      QuickCheck >=2.14.2 && <2.15
     , base >=4.13 && <5
     , delude
     , hspec >=2.7.2 && <2.8
@@ -59,7 +62,8 @@ benchmark compare
       Paths_delude
   hs-source-dirs:
       bench
-  default-extensions: NoImplicitPrelude
+  default-extensions:
+      NoImplicitPrelude
   ghc-options: -Wall -fwarn-incomplete-uni-patterns -fwarn-incomplete-record-updates
   build-depends:
       base >=4.13 && <5
