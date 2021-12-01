@@ -1,5 +1,5 @@
 name:               delude
-version:            0.1.0.4
+version:            0.1.0.5
 synopsis:           Simple Prelude replacement for toy programs
 description:        See https://github.com/chuahou/delude#readme.
 category:           Development

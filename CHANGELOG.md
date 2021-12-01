@@ -1,5 +1,10 @@
 # Revision history for delude
 
+## 0.1.0.5 -- 2021-12-01
+
+* Change to Nix Flakes instead of classic Nix.
+* Update Nixpkgs from 20.09 to 21.11.
+
 ## 0.1.0.4 -- 2020-12-22
 
 * Use `filterSource` to prevent noise from entering derivation, for better
